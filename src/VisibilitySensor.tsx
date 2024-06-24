@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
-import { IntersectionOptions, useInView } from 'react-intersection-observer';
+
+import {
+  IntersectionOptions,
+  useInView,
+} from 'react-intersection-observer';
 
 type Props = IntersectionOptions & {
   onChange(visible: boolean): void;
+  children: React.ReactNode;
 };
 
-const VisibilitySensor: React.FC<Props> = props => {
+const VisibilitySensor: React.FC<Props> = (props) => {
   const { onChange, ...options } = props;
   const { ref, inView } = useInView(options);
 

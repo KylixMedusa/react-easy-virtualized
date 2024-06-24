@@ -14,5 +14,5 @@
     "typeRoots": ["@types"]
   },
   "include": ["**/*.tsx", "**/*.ts", "@types", "index.ts"],
-  "exclude": ["node_modules", "build", "dist", "lib", "example", "rollup.config.js"]
+  "exclude": ["node_modules", "build", "dist", "lib", "example", "rollup.config.mjs"]
 }
