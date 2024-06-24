@@ -1,9 +1,9 @@
-# react-easy-virtualized
+# easy-react-virtualized
 
 This package is easy way to use [react-virtualized](https://github.com/bvaughn/react-virtualized) (built in `WindowScroller`, `AutoSizer`, `List` and optional of `InfiniteLoader`). and use `ResizeObserver` to automatically update cache of `CellMeasurerCache`. (If you want to support IE, please add `ResizeObserver` polyfill)
 
 ```bash
-npm i react-easy-virtualized --save
+npm i easy-react-virtualized --save
 ```
 
 ## Comparison of react-virtualized
@@ -81,10 +81,10 @@ function App ({ data, loadMore, hasMore }: Props) {
 }
 ```
 
-... it's to long and hard to understanding rendering. try to use `react-easy-virtualized` !
+... it's to long and hard to understanding rendering. try to use `easy-react-virtualized` !
 
 ```tsx
-import EasyVirtualized from 'react-easy-virtualized';
+import EasyVirtualized from 'easy-react-virtualized';
 
 type Props = {
   data: AnyData[];
@@ -132,7 +132,7 @@ type Props = {
 
 ```tsx
 import { useRef, Key } from 'react';
-import EasyVirtualized, { EasyVirtualizedScrollerRef } from 'react-easy-virtualized';
+import EasyVirtualized, { EasyVirtualizedScrollerRef } from 'easy-react-virtualized';
 
 function App () {
   const scrollerRef = useRef<EasyVirtualizedScrollerRef>(null);
@@ -151,4 +151,4 @@ function App () {
 
 ## Author
 
-[minuukang](https://www.github.com/minuukang)
+[kylixmedusa](https://www.github.com/kylixmedusa)
